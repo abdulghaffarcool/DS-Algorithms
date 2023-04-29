@@ -1,0 +1,115 @@
+-------------------------------
+Data Structures and Algorithms:
+-------------------------------
+Big O notation? Time and space complexity. Constant time O(1), linear time O(n), quadratic time O(n2), 
+Exponential Time O(2^n), logarithm time O(log n)
+What are infix, prefix, and postfix in data structure? (expressions)
+How would you implement a queue using a stack?
+Name some applications of data structures?
+
+how does dynamic memory allocation will help you in managing data?
+Heap vs. Stack?
+A linked list is considered as a linear or non-linear data structure?
+what is merge sort and how it is useful?
+how does a variable declaration activity will consume or affect the memory allocation?
+
+the dynamic data structure?
+the minimum number of queues that are needed to implement a priority queue?
+
+SORTING ALGORITHMS:
+
+Quicksort: 1. pivot element, partiotion into two, left array elements <= pivot, right array elements > pivot
+		2. Recursively, sort two subarrays with Quicksort.
+		3. Combine sorted arrays.
+
+Bubble sort: keep swapping elements until sorted, multiple iterations, poor performance, quadratic time O(n2)
+Bucket sort: O(n+k), O(n2), create buckets of different ranges, place elements into relevant buckets, sort each bucket
+		concatenate all sorted buckets
+Comb sort: an improved version of bubble sort, gap value > 1, shrink in gap value is 1.3
+Radix sort: linear sorting algorithm, 
+		non-comparative sorting algorithm that is better than the comparative sorting algorithms.
+		It has linear time complexity that is better than the comparative algorithms with complexity O(n logn).
+Merge sort: divide list into 2 halves, keep dividing untill can't be divided, merge two elements in sorted order
+		keep merging untill all are merged and sorted.
+Insertion sort: O(n2), poor performance, keep inserting elements in their sorted order
+Heap sort: time - O(n logn), space O(1), create Heap, convert it to Max Heap, now root element is biggest therefore 
+		remove root element and store it in its sorted position, keep repeating these steps untill sorted
+Balloon sort:
+
+difference between an array and a linked list?
+
+Types of trees.
+General Tree - can have many child nodes
+Binary Tree - can only have maximum two child nodes 
+Forests
+Expression Tree
+Binary Search Tree
+Tournament Tree
+AVL Tree - self balancing BST
+
+Which data structures do you use in DFS and BFS algorithms? 
+Breadth First & Depth First - Graph traversal - time complexity O(V+E)
+
+Trees are also called recursive data structures
+
+----------------
+Heap vs. stack?
+----------------
+https://www.javatpoint.com/stack-vs-heap#:~:text=Stack%20provides%20static%20memory%20allocation,i.e.%2C%20one%20data%20after%20another.
+
+What is a heap?
+A heap is a complete binary tree, and the binary tree is a tree in which the node can have the utmost two children. 
+A complete binary tree is a binary tree in which all the levels except the last level, i.e., leaf node, should be 
+completely filled, and all the nodes should be left-justified.
+
+Stack provides static memory allocation, i.e., it is used to store the temporary variables. Heap provides 
+dynamic memory allocation. By default, all the global variables are stored in the heap. 
+It is a linear data structure means that elements are stored in the linear manner, i.e., one data after another.
+
+Stack memory allocation is considered safer as compared to heap memory allocation because the data stored 
+can only be accessed by the owner thread. Memory allocation and de-allocation are faster as compared to 
+Heap-memory allocation. Stack memory has less storage space as compared to Heap-memory.
+
+Why heap memory is better than stack?
+Heap memory is used by all the parts of the application whereas stack memory is used only by one thread of execution. 
+Whenever an object is created, it's always stored in the Heap space and stack memory contains the reference to it.
+
+Why stack is faster than heap?
+The stack is faster because the access pattern makes it trivial to allocate and deallocate memory 
+from it (a pointer/integer is simply incremented or decremented), while the heap has much more complex 
+bookkeeping involved in an allocation or free.
+
+Is array stack or heap?
+An array is a reference type and hence the memory for it must be in the heap. 
+Reference types live only in the heap, never on the stack.
+
+------------------
+Radix sort: 
+------------------
+Radix sort is the linear sorting algorithm that is used for integers. In Radix sort, 
+there is digit by digit sorting is performed that is started from the least significant digit to 
+the most significant digit.
+
+The process of radix sort works similar to the sorting of students names, according to the alphabetical order. 
+In this case, there are 26 radix formed due to the 26 alphabets in English. In the first pass, the names of students 
+are grouped according to the ascending order of the first letter of their names. After that, in the second pass, 
+their names are grouped according to the ascending order of the second letter of their name. 
+And the process continues until we find the sorted list.
+
+Radix sort is a non-comparative sorting algorithm that is better than the comparative sorting algorithms. 
+It has linear time complexity that is better than the comparative algorithms with complexity O(n logn).
+
+-------------------
+Insertion Sort:
+-------------------
+Step 1 - If the element is the first element, assume that it is already sorted. Return 1.
+
+Step2 - Pick the next element, and store it separately in a key.
+
+Step3 - Now, compare the key with all elements in the sorted array.
+
+Step 4 - If the element in the sorted array is smaller than the current element, then move to the next element. Else, shift greater elements in the array towards the right.
+
+Step 5 - Insert the value.
+
+Step 6 - Repeat until the array is sorted.
